@@ -11,7 +11,7 @@ object Spell {
     val start = now()
     val trainedLib = trained(words)
     val end = now()
-    println(s"Training Time: ${(end - start)}ns")
+    println(s"Training Time: ${(end - start)}ms")
 
     listOrElse(known(List(word), trainedLib)) orElse
     listOrElse(known(edits(word), trainedLib)) orElse
