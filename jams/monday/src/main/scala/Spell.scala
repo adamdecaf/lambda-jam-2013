@@ -7,12 +7,18 @@ object Spell {
     val words: List[String] = dataFile.filter { w =>
       w.foldLeft(false) { (acc, char) => alphabet.contains(char) }
     }
+
+    val start = now()
     val trainedLib = trained(words)
+    val end = now()
+    println(s"Training Time: ${(end - start)}ns")
 
     listOrElse(known(List(word), trainedLib)) orElse
     listOrElse(known(edits(word), trainedLib)) orElse
     listOrElse(known_edits2(word, trainedLib)) getOrElse List(word)
   }
+
+  private[this] def now() = System.currentTimeMillis
 
   private[this] def listOrElse[A](l: Iterable[A]): Option[List[A]] =
     if (l.isEmpty) None else Some(l.toList)
