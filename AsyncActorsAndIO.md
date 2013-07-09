@@ -71,9 +71,12 @@ for {
   * Completely abstracted implementation
 * [scala-machines] libraray
   * Ported to Scala from haskell by runar
+* [scala/async] Library
+  * Created by typesafe
 * So, use monadic dsl's to compose network flow
   * Create an AST to then create multiple interpreters
 
+[scala/async]: https://github.com/scala/async
 [scala-machines]: https://github.com/runarorama/scala-machines
 
 ## Transformations and reactive code
