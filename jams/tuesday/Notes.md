@@ -24,6 +24,8 @@
 ## Solutions
 
 * https://gist.github.com/jenglert/5960901
+* https://gist.github.com/timgaleckas/5961054
 * https://gist.github.com/bgruber/5960910
+* https://github.com/robgowin/DigitClassifier/blob/master/src/main/scala/DigitClassifier.scala
 * https://github.com/pcorliss/lambdajam2013/blob/master/jams/learning/src/lambada/core.clj
 * https://github.com/adamdecaf/lambda-jam-2013/blob/master/jams/tuesday/src/main/scala/Recognize.scala
